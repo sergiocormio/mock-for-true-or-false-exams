@@ -1,0 +1,115 @@
+Un proyecto es ejecutado a través de una serie de tareas independientes#F#puede tener tareas dependientes
+El Jefe de Proyecto siempre tiene autoridad sobre las decisiones del proyecto, el presupuesto y los recursos#F#Hay decisiones que las toma el sponsor, ejemplo: acortar el alcance
+La organización del proyecto es independiente de la estructura de la organización ejecutora del proyecto#F#todas las areas se realcionan con todas (no hay nada independiente)
+Los interesados de un proyecto son aquellos que tienen interés en que éste concluya con éxito#F#el interes sobre el proyecto puede ser positivo o negativo.
+Un usuario final que no fue involucrado en el proyecto no es un interesado#F#es un interesado y fue un grave error no haberlo involucrado. Esto genera retraso en el proyecto, y eventualmente no cumplimiento del objetivo
+Las expectativas de los interesados sólo interesan al principio del proyecto#F#interesan en todo el proyecto
+Los proyectos se definen en forma demasiado restringida cuando comienzan#F#no necesariamente. Generalmente se definen de forma general, con el alcance deseado, y luego, cuando se va obteniendo informacion con mayor detalle, se van refinando las herramientas.
+Un proyecto debe desarrollarse en forma progresiva, empezando por detalles específicos y ampliando luego el alcance a medida que se avanza#F#los detalles se obtienen a medida que el proyecto avanza
+Los proyectos raramente involucran incertidumbre#F#Siempre involucran incertidumbre
+El objetivo de un proyecto se define siempre en términos de recursos, calendario y costos#F# Según mi carpeta por el día que hicimos el final en clase: en términos de RR + Calendario + Costos + ALCANCE.
+Un proyecto tiene una vida acotada en el tiempo.#V#tiene un inicio y un fin
+La combinación entre lo que se asume y lo que se estima en un proyecto dan la certeza completa que el objetivo del proyecto se va a lograr#F#siempre hay incertidumbre (ejemplo: posibilidad de que se materialice algun riesgo externo) Ademas la estimacion implica incertidumbre.
+Algunos proyectos se consideran exitosos si obtienen los beneficios prometidos aun completándose excedidos en calendario y costos#V#
+La definición del éxito de un proyecto es cumplir los costos y los calendarios#F#Tiene que ver más con “cumplir el objetivo” directamente.
+El jefe de proyecto enfrenta normalmente restricciones que compiten entre ellas#V#
+Un programa es un grupo de proyectos relacionados administrados en forma coordinada para obtener beneficios y gobierno no disponibles si se los manejara en forma individual#V#es la definicion de programa“La gobernabilidad de un proyecto debe integrarse al contexto más amplio del programa o de la organización que lo patrocina. ” … “La gobernabilidad del proyecto proporciona un método integral y coherente de controlar el proyecto y asegurar el éxito. ” (PMBOK)
+Administración del portfolio de proyectos se refiere al proceso en que la organización agrupa y administra los proyectos y programas como un portfolio de inversiones que contribuyen al éxito de la empresa#V#es la definicion de portafolio “El término portafolio se refiere a un conjunto de proyectos o programas y otros trabajos que se agrupan para facilitar la dirección eficaz de ese trabajo para cumplir con los objetivos estratégicos del negocio. ” (PMBOK)
+La selección de proyectos implica evaluar necesidades y oportunidades y decidir cual de estas debería ser pasada a la categoría de proyecto.#V#
+Las técnicas y procedimientos son el factor más critico para lograr el objetivo del proyecto.#F#otro por ejemplo es el Arte de la Administración, para mi apunta a eso este punto.
+Los jefes de proyecto son usualmente líderes y administradores#V#
+Lo más costoso es aplicar cambios en las etapas más tempranas de un proyecto#F#en las etapas mas avanzadas/tardias del proyecto
+El ciclo de vida de un proyecto es una colección de fases del proyecto#V#es un conjunto de fases (1 o mas) “El ciclo de vida del proyecto es un conjunto de fases del mismo, generalmente secuenciales y en ocasiones superpuestas, cuyo nombre y número se determinan por las necesidades de gestión y control de la organización u organizaciones que participan en el proyecto, la naturaleza propia del proyecto y su área de aplicación. (PMBOK)”
+En las etapas mas tempranas se necesitan más recursos y el nivel de incertidumbre es el menor#F#el nivel de incertidumbre es el mayor y se necesitan menos recursos
+Las fases de los proyectos, normalmente tienen duración estándar y poca variación entre diferentes tipos de proyectos#F#dependen del tipo de proyecto y no tienen duracion estandar
+Un factor importante para determinar las fases de un proyecto es tener el control de las necesidades de la organización que involucra el proyecto#V#para tener el control en diferentes momentos
+Generalmente las fases del proyecto se diseñan de modo tal que el dinero gastado en cada una de ellas sea equivalente#F#no necesariamente, y en gral esto nunca se da asi
+Los proyectos consisten en el trabajo operativo necesario para asegurar que la organización funcione en forma efectiva#F#No es una definicion valida de PROYECTO. y ademas: Las operaciones apoyan al ambiente de negocio en donde se ejecutan los proyectos. Proyecto es todo lo contrario de Trabajo Operativo.
+Los temas organizativos son la parte menos complicada de la administración de proyectos#F#y punto.
+El jefe de proyecto en una organización matricial tiene especialistas de varias áreas funcionales trabajando en su proyecto#V#a las 3 y 32 de la mañana.
+En una matriz, una persona reporta a dos jefes#V#
+Los jefes de proyecto tienen la máxima autoridad en una organización funcional#F#los jefes funcionales
+En un proyecto distribuido en varios países, sólo importa transmitir los requerimientos en forma precisa y nada más.#F#seguramente importaran varias cosas mas, ejemplo: como administrar la comunicacion entre los integrantes del proyecto. (VER EQUIPO VIRTUAL en el PMBOK)
+El nivel de actividad y la duración de cada grupo de proceso varía con cada proyecto#V#
+Los procesos del grupo de monitoreo y control se superponen con todos los procesos#V#
+Las fases de un proyecto son equivalentes a los grupos de proceso de la Administración de Proyectos#F#Cada fase tendra admin de proyecto, en donde se pueden indeptificar los 5 grupos de procesos.
+Pueden existir diferentes fases de proyectos pero todos los proyectos incluyen los 5 grupos de proceso de la Administración de Proyectos#V#tantas veces como fases tenga el proyecto
+Los procesos de inicio ocurren durante cada fase de un proyecto#V#
+Los procesos dentro de los grupos se ejecutarán en el orden secuencial en el que fueron presentados#F#no son secuenciales
+Desarrollar el Plan de Gestión del Proyecto es la primera tarea a completar en el grupo de procesos de Planificación#F#es la ultima, ya que primero se deben completar los planes de cada una de las areas de conocimiento, que luego van a conformar el plan de gestion del proyecto
+Las decisiones tomadas en un área de conocimiento raramente afectarán a otras áreas de conocimiento.#F#todas las areas se relacionan entre si
+El proceso de inicio tiene lugar durante cada fase de un proyecto#V#pero inicio es un grupo de procesos.
+Los procesos del grupo de inicio no se requieren para terminar un proyecto#F#marcan el inicio del mismo. Ejemplo: La generacion del charter autoriza formalmente la existencia del proyecto en cuestion.
+El charter describe todos los entregables requeridos del proyecto#F#el charter posee informacion de alto nivel (objetivo, requerimientos, riesgos, calendario tentativo)
+El charter es un contrato legal entre el equipo de trabajo y el sponsor#F#es un documento pero no un contrato legal “si el proyecto se esta ejecutando para un cliente externo, el contrato constituye una entrada” PMBOK
+Un proyecto debe desarrollarse utilizando la elaboración progresiva, empezando por el detalle y ampliando el alcance a medida que se progresa#F#no se empieza por el detalle
+Costo, calendario y calidad determinan los requerimientos de un proyecto#F#y el alcance?
+Los requerimientos indican cómo se descompondrá el trabajo a realizar en el proyecto#F#eso lo indica la WBS, los requerimientos pueden ser de alto nivel, (poco detalle). luego se debera tratar de descomponerlos por medios de la generacion de una WBS
+Desarrollar el cronograma implica medir el progreso real y compararlo con el planificado#F#si estamos en la planificacion, todavia no puedo medir el progreso real porque todavia no paso.
+La duración estimada para cada actividad incluye el total de tiempo transcurrido y cualquier tiempo de espera asociado#V#
+El esfuerzo estimado para cada actividad incluye el total de tiempo transcurrido y cualquier tiempo de espera asociado#F#
+La duración estimada de una actividad debe basarse en la cantidad de recursos que se espera requerirá la actividad#F#falta el TIPO de recursos y la disponibilidad de los mismos.
+Recursos incluye personas, equipos, maquinas, herramientas, instalaciones y espacio.#V#si es que no falta nada...
+El primer proceso para desarrollar un cronograma es identificar todos los recursos disponibles para trabajar en el proyecto#F#primero las actividades, luego el orden de las mismas, luego los recursos
+El paquete de trabajo tiene suficiente detalle para desarrollar el cronograma#F#cada paquete de trabajo se puede descomponer en actividades (en el cronograma van las actividades)
+Si bien el ultimo nivel de la WBS es el paquete de trabajo, este puede ser descompuesto en actividades#V#brindaria mayor detalle
+Además de mostrar las restricciones técnicas entre actividades, la red de actividades también muestra las restricciones de recursos#F#no muestra restricciones de recursos
+Un hito implica la ejecución de una sola actividad#F#implica el cumplimiento o no, “de algo” que puede ser representado por mas de una actividad.
+Aunque la entrega de nuevo hardware no forme parte de su proyecto, debe agregarse una dependencia con ese hito#V#si se lo toma como hito externo (dependencia externa) CONFIRMAR!!!
+Comenzada para finalizar es la relación más común entre actividades#F#la mas comun es “terminada para empezar”
+La duración sólo incluye el total real de tiempo trabajado en la actividad#F#Se incluyen tiempos muertos tmb.
+El total de tiempo que una actividad puede demorarse sin demorar el proyecto se llama camino critico#F#esa es la definicion de holgura o slack. El camino critico no posee tiempos muertos. Cualquier demora, demorara el proyecto.
+La nivelación de recursos es una técnica de creación de cronogramas que busca asignar trabajo equivalente a cada miembro del grupo de trabajo#V#segun su definicion: “cualquier forma de análisis de cronograma en la cual la decisión de ubicación de una actividad en el mismo, fechas de comienzo y final, están subordinadas a la restricción de recursos (disponibilidad o dificultad para conseguir un cambio en la cantidad de recursos asignados)” La palabra clave es “esquivalente”. no se asigna trabajo equivalente, ya que un junior no hace el trabajo equivalente al de un senior.
+En una estructura matricial, el jefe funcional controla los presupuestos del proyecto#F#lo deberia hacer el jefe de proyecto
+La información del cronograma del proyecto puede incluir un presupuesto detallado#F#puede incluirlo, pero no creo que sea detallado
+La mayor parte del tiempo en un proyecto se gasta en la planificación y esta insume el mayor gasto del proyecto#F#la ejecucion puede llegar a insumir mas tiempo. Tampoco creo que insuma el mayor gasto, la ejecucion creo que insume mas gasto
+En el momento de preparar el Charter se tiene una idea muy general del proyecto y el presupuesto es sólo aproximado#V#
+El jefe de proyecto es directamente responsable por los resultados del proyecto, el cronograma y el presupuesto#V#
+La medida más crítica de éxito de un proyecto es completarlo en calendario y presupuesto#F#
+La estimación de costos está muy ligada al alcance, el cronograma y la planificación de recursos#V#
+Los costos fijos permanecen constantes en el tiempo, mientras que los variables cambian directamente en función del tiempo#F#los variables cambian en funcion del nivel de actividad en el proyecto, no en funcion del tiempo
+Las decisiones relacionadas con costos fijos o variables son muy sensibles a cambios en el volumen y alcance del proyecto#F#no son sensibles a los costos fijos, (los fijos no varian)
+La estimación por analogía es más detallada, consume más tiempo y es la forma más precisa de estimar#F#todo lo contrario!!! es la que se hace al inicio, cuando se tiene el charter. La mas detallada yque consume mas tiempo es la Bottom-up.
+El proceso de desarrollar una aproximación de los costos de los recursos necesarios en un proyecto se denomina presupuestación de capital#F#definicion no dada. A parte se llama estimacion de costos.
+Los proyectos habitualmente incluyen costos indirectos no asociados a ellos como por ejemplo materiales, viaje y compras de suministros, costos del personal y consultores#F#los ejemplos estan mal, son ejemplos de costos directos 
+El termino fondos para seguros describe los fondos necesarios por sobre lo estimado para reducir excesos por riesgos#F#no se dio el concepto de “fondos de seguros”
+La planificación de la calidad implica la identificación de los riesgos, el análisis ylla preparación de su respuesta#F#Los riesgos no se identifican aca, sino que son una de las entradas de este proceso. Ademas este proceso hacer hacer otras cosas, ejemplo: Análisis (e incorporacion) de atributos de calidad requeridos para el producto, etc
+La comunicación con los interesados es necesaria para trasladarles el riesgo y la responsabilidad del equipo de proyecto a ellos#F#no se le traslada ninguna responsabilidad
+La planificación de la comunicación determina las necesidades de comunicación de los interesados del proyecto#F#Esta incompleta: faltaria tmb--> “y como informar”
+Mitigación de riesgos implica eliminar una amenaza específica, eliminando sus causas#F# mitigar es bajar la probabilidad de ocurrencia y el impacto de la amenaza.
+Evitar un riesgo implica trasladar la consecuencia y responsabilidad de administración del riesgo a un tercero#F#esa definicion es de transferir
+La administración de la calidad generalmente se refiere a la identificación, análisis y respuesta a los riesgos.#F#la administracion de la calidad es otra cosa.
+Es imposible remover todas las fuentes de riesgo de un proyecto#V#hay amenazas que son externas
+Cuando el impacto de un evento es negativo se lo considera un riesgo, cuando es positivo es una oportunidad#V#Aunque no lo CREAS ésta en el final que hicimos en clase era Verdadera: “Negativo es riesgo, positivo es riesgo también pero le puedo llamar oportunidad”.
+Un plan de administración de riesgos debe definir quién tiene la responsabilidad de causar cada riesgo y asignar a la parte responsable directamente involucrada en desarrollar la solución apropiada#F#no define quien tiene la responsabilidad de causarlos
+La planificación de la respuesta al riesgo se enfoca en desarrollar opciones para cada riesgo identificado.#V#desarrolar opciones no implica tratarlos. Se los puede no tratar.
+La evaluación de riesgos debe permanecer objetiva y no influenciada por las prioridades de los interesados.#F#Se debe involucrar a los interesados en el proceso de identificacion de riesgos
+El registro de riesgos se completa durante la identificación de los mismos.#F#se actualiza constantemente durante el conjunto de procesos de seguimiento y control.
+El costo por riesgo para los riesgos descubiertos en forma temprana en el proyecto es mayor que el costo de los descubiertos en forma tardía debido a que hay más oportunidades para el riesgo de impactar en varias dimensiones del proyecto#F#es mas barato descubrir los riesgos cuanto antes
+Mapeo de riesgo es el proceso de determinar que riesgos afectaran al proyecto y documentar sus características#F#no se vio el concepto de mapeo de riesgos. A parte esa definicion es la de Identificacion de Riesgos
+Cuando una Organización terceriza un trabajo, no tiene demasiado control sobre la forma en que el proveedor ejecuta el trabajo#V#no se tiene demasiado control sobre el COMO, si sobre el QUE.
+Si no necesitan comprarse productos ni servicios, no hay necesidad de proceso de compras#F#En la planificacion de las contrataciones, en primer lugar se decide que es lo que se va a comprar y lo que se va a hacer internamente. Esta accion ya forma parte del proceso
+La decisión hacer/comprar implica estimar costos de proveer el servicio versus el costo de tercerizarlo#F#Quizas no sea un tema de costos, sino de disponibilidad de recursos, ej: la gente capacitada para hacer determinada tarea, esta en otro proyecto
+El comprador corre menos riesgo con un contrato de tipo reintegro de costos que con un contrato a precio fijo.#F#corre menos riesgos con el de precio fijo, porque se fija el precio y las especificaciones al ppio, y eso no varia. Igual esto va a estar sujeto a cuan claro tenga las definiciones de lo que quiere adquirir, porque si no lo tiene muy claro, le conviene hacer un contrato por reembolso, que es mas flexible en cuanto al alcance de lo que se va a adquirir (pero te pueden romper el orto con el precio, porque tmb varia).
+El equipo de proyecto es el colchón entre el cliente y el jefe de proyecto#F#No se tiene que exponer al equipo de esa forma
+Las técnicas y los procedimientos son el factor más importante en el éxito del proyecto#F#y el arte?
+Involucrar al equipo de trabajo es caro y consume tiempo, por lo tanto debe evitarse#F#El ET debe estar involucrado si o si
+El jefe de proyecto debe decirle al empleado como hacer el trabajo para que le salga bien#F# El empleado sabe como hacer su trabajo (son los especialistas), el jefe puede no saber como hacerlo, pero si como administrar el proyecto.
+En un equipo efectivo los conflictos se suprimen#F#Los conflictos siempre existen
+El conflicto es malo y debe ser evitado#F#Los conflictos deben afrontarse y resolverse
+Cuando un miembro del equipo identifica un problema o problema potencial, debe llamarse de inmediato a una reunión de revisión de estado del proyecto#F#es muy exagerado realizar una reunion por esto
+La WBS puede incluir un componente de comunicación del proyecto para asegurar que el reporte de información clave es un entregable del proyecto#V#
+El contenido esencial acerca de todo lo relacionado con la comunicación en el proyecto proviene de la WBS.#F#lo tiene el plan de comunicacion.
+Una vez que los cambios se incorporan en el Plan y se acuerdan con el Cliente, se genera un nuevo diagrama de tiempos y costos#F#no siempre es necesario generar nuevos diagramas
+Siempre se debe seguir el Plan, ignorando los cambio, ya que nos desvían del Plan.#F#no se deben ignorar los cambios, justamentes los cambios son para introducir mejoras
+El cambio siempre lo aprueba sólo el Jefe de Proyecto#F#Los importantes los puede aprobar el sponsor
+Los cambios menores pueden no formalizarse#F#todos los cambios deben formalizarse/registrarse
+El control de calidad y la verificación del Alcance son términos distintos para denominar lo mismo#F#Verificar el alcance es la formalización de la aceptación de los entregables del proyecto Normalmente ejecutado luego o en paralelo del control de calidad de los entregables. Control de calidad, comprobación del comportamiento del proyecto efectuada sobre sus resultados(entregables, cronogramas, presupuestos) y a la propuesta de los cambios que se requieran.En el control de calidad se usa la INSPECCION.
+El jefe del proyecto es en última instancia el responsable de la administración de la calidad en el proyecto#V#
+La prueba debe hacerse durante todas las fases del ciclo de vida del proyecto#V#ya que en cada fase se ejecutarian los 5 grupos de procesos de la administracion de proyecto
+Aseguramiento de calidad se refiere al seguimiento de los resultados para determinar si cumplen con los requerimientos#F#no se refiere al seguimiento de los resultados, tiene mas que ver con el seguimiento del proceso. Y es para determinar si cumplen con lo que yo habia planificado, no con los requerimientos.(esto ultimo lo aclaro para diferenciar lo que es calidad del producto y calidad del proyecto, la calidad del producto se verifica contra los requerimientos, la del proyecto, contra el plan :D )
+Entre las salidas del control de calidad pueden incluirse recomendaciones para reducir la probabilidad de consecuencias de efectos negativos sobre el proyecto.#F#por la carpeta de sergio
+En un diagrama Pareto las variables se ordenan cronológicamente#F#el diagrama de pareto no muestra cronologia se agrupan por frecuencia de ocurrencia del defecto.
+La estimación de costos está asociada con el alcance, el calendario y los recursos#V#
+Presupuestar es el proceso de agregar los costos estimados de las actividades individuales o los paquetes de trabajo para establecer un baseline#V#??
+Finalizado el cierre, se terminó el proyecto#F#porque pudo haber sido el final de una fase, no del proyecto. Sera tan especifico, o el viejo la considerara como verdadera?

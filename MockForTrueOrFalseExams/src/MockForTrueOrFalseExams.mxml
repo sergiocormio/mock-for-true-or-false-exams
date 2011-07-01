@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+					   xmlns:s="library://ns.adobe.com/flex/spark" 
+					   xmlns:mx="library://ns.adobe.com/flex/mx"
+					   applicationComplete="initApp()"
+					   height="300">
+	<fx:Script>
+		<![CDATA[
+			import mx.collections.ArrayCollection;
+			import mx.controls.Alert;
+			import mx.core.IFlexDisplayObject;
+			import mx.managers.PopUpManager;
+			
+			private var questions:ArrayCollection;
+			private var currentExam:ArrayCollection;
+			[Bindable]
+			private var currentIndexQuestion:int = 0;
+			private var currentQuestion:Question;
+			
+			private function initApp():void{
+				loadQuestions();
+				updateNumbers();
+			}
+			
+			private function randomInRange(min:Number, max:Number):Number {
+				var scale:Number = max - min;
+				return Math.random() * scale + min;
+			}
+			private function generateExam():void{
+				//takes a random numeric list
+				var posList:ArrayCollection= new ArrayCollection();
+				while (posList.length<howMuchQuestions.value){
+					var newRandom:Number = randomInRange(0,questions.length-1);
+					while(posList.contains(newRandom)){
+						newRandom = randomInRange(0,questions.length-1);
+					}
+					posList.addItem(newRandom);
+				}
+				//creates
+				currentExam = new ArrayCollection();
+				for each (var i:Number in posList){
+					currentExam.addItem(questions.getItemAt(i));
+				}
+				
+			}
+			
+			private function updateNumbers():void{
+				questionQuantity.text = questions.length.toString();
+				howMuchQuestions.maximum = questions.length;
+				howMuchQuestions.value = howMuchQuestions.maximum;
+			}
+			
+			private function loadQuestions():void{
+				questions = new ArrayCollection();
+				var file:File = File.applicationDirectory;
+				file = file.resolvePath("VoFs.txt");
+				var fileStream:FileStream = new FileStream();
+				fileStream.open(file, FileMode.READ);
+				var bytesNumber:uint = fileStream.bytesAvailable;
+				var allQuestions:String;
+				while (bytesNumber>0){
+					allQuestions += fileStream.readUTFBytes(bytesNumber);
+					bytesNumber = fileStream.bytesAvailable;
+				}
+				//parse allQuestions
+				for each (var token:String in allQuestions.split('\r\n')){
+					var components:Array = token.split('#');
+					if(components.length >=2){
+						var question:Question = new Question(components[0]);
+						var ans:String = components[1];
+						if(ans.toLowerCase()=='f'){
+							question.answer = false;
+						}else{
+							question.answer = true;
+						}
+						if (components.length>2){
+							question.clarification= components[2];
+						}
+						questions.addItem(question);
+					}
+				}
+				fileStream.close();
+			}
+
+			protected function startExam(event:MouseEvent):void{
+				nextButton.enabled=true;
+				beginButton.enabled=false;
+				endButton.enabled=true;
+				generateExam();
+				currentIndexQuestion = -1;
+				goToNextQuestion();
+				
+			}
+
+			private function goToNextQuestion():void{
+				//save First
+				if(currentIndexQuestion!=-1){
+					if(userAnswer.selectedValue!=null){
+					currentQuestion.userAnswer = userAnswer.selectedValue.toString();
+					}else{
+						currentQuestion.userAnswer = null;
+					}
+				}
+				//reset true and false
+				userAnswer.selectedValue=null;
+				Verdadera.selected=false;
+				Falsa.selected=false;
+				//next
+				currentIndexQuestion++;
+				if(currentExam.length > currentIndexQuestion){
+					currentQuestion = currentExam.getItemAt(currentIndexQuestion) as Question;
+					currentQuestionText.text = currentQuestion.questionText;
+				}else{
+					nextButton.enabled=false;
+				}
+				
+			}
+			
+			protected function nextButton_clickHandler(event:MouseEvent):void{
+				goToNextQuestion();
+			}
+
+
+			protected function endButton_clickHandler(event:Event):void
+			{
+				beginButton.enabled = true;
+				endButton.enabled = false;
+				ResultView.resultList = currentExam;
+				var fdo:IFlexDisplayObject = PopUpManager.createPopUp(this, ResultView, true);
+				PopUpManager.centerPopUp(fdo);
+				var result:ResultView = ResultView(fdo);
+			}
+
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+		<s:RadioButtonGroup id="userAnswer" />
+	</fx:Declarations>
+	<s:VGroup width="100%">
+		<s:VGroup  width="100%" paddingLeft="10" paddingTop="10" horizontalAlign="center">
+			<s:HGroup>
+				<s:Label text="Número de preguntas cargadas: "/>
+				<s:Label id="questionQuantity" text="0"/>	
+			</s:HGroup>
+			<s:HGroup>
+				<s:Label text="Cuantas querés hacer?"/>
+				<s:NumericStepper id="howMuchQuestions" minimum="0" maximum="0" value="0" />	
+			</s:HGroup>
+			<s:HGroup>
+				<s:Button id="beginButton" label="Comenzar!" click="startExam(event)"/>	
+			</s:HGroup>
+		</s:VGroup>
+		<mx:Spacer height="10"/>
+		<mx:HRule width="100%"/>
+		<s:VGroup width="100%" >
+			<s:HGroup>
+				<s:Label text="Pregunta: Nº"/>
+				<s:Label text="{currentIndexQuestion+1}"/>
+			</s:HGroup>
+			<s:HGroup horizontalAlign="center" width="100%" >
+				<s:TextArea id="currentQuestionText" width="100%" editable="false" height="70"/>
+			</s:HGroup>
+			<s:HGroup width="90%" horizontalAlign="center">
+				<s:RadioButton groupName="userAnswer" id="Verdadera" value="true" label="Verdadera" width="150"/>
+				<s:RadioButton groupName="userAnswer" id="Falsa" value="false" label="Falsa" width="150"/>
+				<s:Button id="nextButton" label="Siguiente" click="nextButton_clickHandler(event)" enabled="false"/>
+			</s:HGroup>
+			<mx:Spacer height="10"/>
+			<mx:HRule width="100%"/>
+			<s:HGroup horizontalAlign="center" width="100%">
+				<s:Button id="endButton" label="Finalizar Examen" click="endButton_clickHandler(event)" enabled="false"/>	
+			</s:HGroup>
+		</s:VGroup>
+	</s:VGroup>
+</s:WindowedApplication>
