@@ -7,9 +7,12 @@
 	<fx:Script>
 		<![CDATA[
 			import mx.collections.ArrayCollection;
+			import mx.containers.TitleWindow;
 			import mx.controls.Alert;
 			import mx.core.IFlexDisplayObject;
 			import mx.managers.PopUpManager;
+			
+			import spark.components.Window;
 			
 			private var questions:ArrayCollection;
 			private var currentExam:ArrayCollection;
@@ -22,26 +25,23 @@
 				updateNumbers();
 			}
 			
-			private function randomInRange(min:Number, max:Number):Number {
+			private function randomInRange(min:Number, max:Number):int {
 				var scale:Number = max - min;
-				return Math.random() * scale + min;
+				return int(Math.random() * scale + min);
 			}
+			
 			private function generateExam():void{
-				//takes a random numeric list
-				var posList:ArrayCollection= new ArrayCollection();
-				while (posList.length<howMuchQuestions.value){
-					var newRandom:Number = randomInRange(0,questions.length-1);
-					while(posList.contains(newRandom)){
-						newRandom = randomInRange(0,questions.length-1);
-					}
-					posList.addItem(newRandom);
-				}
-				//creates
+				//duplicates questions list
+				var dupQuestions:ArrayCollection= new ArrayCollection();
+				dupQuestions.addAll(questions);
+				//reset current Exam
 				currentExam = new ArrayCollection();
-				for each (var i:Number in posList){
-					currentExam.addItem(questions.getItemAt(i));
+				while (currentExam.length<howMuchQuestions.value){
+					//takes a random item from dupQuestion
+					var newRandom:int = randomInRange(0,dupQuestions.length-1);
+					//Add it to current exam
+					currentExam.addItem(dupQuestions.removeItemAt(newRandom));
 				}
-				
 			}
 			
 			private function updateNumbers():void{
@@ -93,21 +93,15 @@
 			}
 
 			private function goToNextQuestion():void{
-				//save First
-				if(currentIndexQuestion!=-1){
-					if(userAnswer.selectedValue!=null){
-					currentQuestion.userAnswer = userAnswer.selectedValue.toString();
-					}else{
-						currentQuestion.userAnswer = null;
-					}
-				}
+				//save First user answer
+				saveCurrentAnswer();
 				//reset true and false
 				userAnswer.selectedValue=null;
 				Verdadera.selected=false;
 				Falsa.selected=false;
 				//next
-				currentIndexQuestion++;
-				if(currentExam.length > currentIndexQuestion){
+				if(currentExam.length > currentIndexQuestion+1){
+					currentIndexQuestion++;
 					currentQuestion = currentExam.getItemAt(currentIndexQuestion) as Question;
 					currentQuestionText.text = currentQuestion.questionText;
 				}else{
@@ -121,14 +115,24 @@
 			}
 
 
-			protected function endButton_clickHandler(event:Event):void
-			{
+			private function saveCurrentAnswer():void{
+				if(currentIndexQuestion!=-1){
+					if(userAnswer.selectedValue!=null){
+						currentQuestion.userAnswer = userAnswer.selectedValue.toString();
+					}else{
+						currentQuestion.userAnswer = null;
+					}
+				}
+			}
+			
+			protected function endButton_clickHandler(event:Event):void	{
+				saveCurrentAnswer();
 				beginButton.enabled = true;
 				endButton.enabled = false;
+				nextButton.enabled = false;
 				ResultView.resultList = currentExam;
-				var fdo:IFlexDisplayObject = PopUpManager.createPopUp(this, ResultView, true);
-				PopUpManager.centerPopUp(fdo);
-				var result:ResultView = ResultView(fdo);
+				var r:Window = new ResultView();
+				r.open();
 			}
 
 		]]>
@@ -137,14 +141,14 @@
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 		<s:RadioButtonGroup id="userAnswer" />
 	</fx:Declarations>
-	<s:VGroup width="100%">
-		<s:VGroup  width="100%" paddingLeft="10" paddingTop="10" horizontalAlign="center">
+	<s:VGroup width="100%" height="100%">
+		<s:VGroup  width="100%" verticalAlign="top" height="10%" paddingLeft="10" paddingTop="10" horizontalAlign="center">
 			<s:HGroup>
 				<s:Label text="Número de preguntas cargadas: "/>
 				<s:Label id="questionQuantity" text="0"/>	
 			</s:HGroup>
-			<s:HGroup>
-				<s:Label text="Cuantas querés hacer?"/>
+			<s:HGroup verticalAlign="middle">
+				<s:Label text="Cuántas deseas hacer?"/>
 				<s:NumericStepper id="howMuchQuestions" minimum="0" maximum="0" value="0" />	
 			</s:HGroup>
 			<s:HGroup>
@@ -153,24 +157,24 @@
 		</s:VGroup>
 		<mx:Spacer height="10"/>
 		<mx:HRule width="100%"/>
-		<s:VGroup width="100%" >
-			<s:HGroup>
+		<s:VGroup width="100%" verticalAlign="middle" height="80%">
+			<s:HGroup height="10%" verticalAlign="top">
 				<s:Label text="Pregunta: Nº"/>
 				<s:Label text="{currentIndexQuestion+1}"/>
 			</s:HGroup>
-			<s:HGroup horizontalAlign="center" width="100%" >
-				<s:TextArea id="currentQuestionText" width="100%" editable="false" height="70"/>
+			<s:HGroup horizontalAlign="center" width="100%" height="80%" verticalAlign="middle">
+				<s:TextArea id="currentQuestionText" width="100%" height="100%" editable="false"/>
 			</s:HGroup>
-			<s:HGroup width="90%" horizontalAlign="center">
+			<s:HGroup width="90%" horizontalAlign="center" height="10%" verticalAlign="bottom">
 				<s:RadioButton groupName="userAnswer" id="Verdadera" value="true" label="Verdadera" width="150"/>
 				<s:RadioButton groupName="userAnswer" id="Falsa" value="false" label="Falsa" width="150"/>
 				<s:Button id="nextButton" label="Siguiente" click="nextButton_clickHandler(event)" enabled="false"/>
 			</s:HGroup>
-			<mx:Spacer height="10"/>
-			<mx:HRule width="100%"/>
-			<s:HGroup horizontalAlign="center" width="100%">
-				<s:Button id="endButton" label="Finalizar Examen" click="endButton_clickHandler(event)" enabled="false"/>	
-			</s:HGroup>
+		</s:VGroup>
+		<mx:Spacer height="10"/>
+		<mx:HRule width="100%"/>
+		<s:VGroup verticalAlign="bottom" height="10%" horizontalAlign="center" width="100%">
+			<s:Button id="endButton" label="Finalizar Examen" click="endButton_clickHandler(event)" enabled="false"/>	
 		</s:VGroup>
 	</s:VGroup>
 </s:WindowedApplication>
