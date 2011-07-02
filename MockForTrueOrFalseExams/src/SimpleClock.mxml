@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Simple clock class to return a string representing a count down to MAX 2007.
+This can be modified to return a Date object instead of a string object
+Authors: Prayank Swaroop, Duane Nickull 2007. No warranties exist - use
+at your own peril.  We warned you. Send complaints to dev@null.net
+-->
+<s:Label creationComplete="init()" xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark">
+	<fx:Script>
+		<![CDATA[
+			public var countDownDate:Date;
+			//creates a Timer that fires an event once per second
+			public var ticker:Timer; 
+			
+			private function init():void{
+				ticker = new Timer(1000);
+			}
+			
+			public function start():void{
+				countDownDate = new Date;
+				// designates the onTick() method to handle Timer events
+				ticker.addEventListener(TimerEvent.TIMER, onTick);
+				
+				// starts the clock ticking
+				ticker.start();
+			}
+			
+			public function stop():void{
+				// designates the onTick() method to handle Timer events
+				ticker.removeEventListener(TimerEvent.TIMER, onTick);
+				
+				// starts the clock ticking
+				ticker.stop();
+			}
+			
+			public function onTick(evt:TimerEvent):void{
+				// updates the clock display
+				this.text = getCountUp(countDownDate.getTime());
+			}
+			
+			protected function getCountUp(uptime:Number):String{
+				//current date
+				var currentDate:Date = new Date();
+					
+				//get time zone offset. Number returned in minutes.
+				var currentOffset:Number = currentDate.getTimezoneOffset();
+				
+				// Construct String
+				var result:String = new String();
+				
+				var dif:Number = currentDate.getTime() - uptime;
+				//hours
+				var hours:int = int(dif/1000/60/60);
+				if(hours<10){result+='0';}
+				result += hours + ":"; 
+				
+				//mins
+				var minutes:int = int(dif/1000/60) - hours*60;
+				if(minutes<10){result+='0';}
+				result += minutes + ":";
+				
+				//secs
+				var secs:int = int(dif/1000) - minutes*60 - hours*60;
+				if(secs<10){result+='0';}
+				result += secs;
+				
+				return result;
+			}
+		]]>
+		
+	</fx:Script>
+
+	
+</s:Label>
+
