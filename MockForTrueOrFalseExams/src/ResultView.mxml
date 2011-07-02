@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+<s:Window xmlns:fx="http://ns.adobe.com/mxml/2009" 
 			   xmlns:s="library://ns.adobe.com/flex/spark" 
 			   xmlns:mx="library://ns.adobe.com/flex/mx"
-			   title="Results!"
+			   title="Resultados"
 			   height="400" width="500"
 			   close="PopUpManager.removePopUp(this);"
 			   creationComplete="createSummary()"
@@ -15,6 +15,12 @@
 			[Bindable]
 			static public var resultList:ArrayCollection;
 			[Bindable]
+			static private var correctList:ArrayCollection;
+			[Bindable]
+			static private var nullList:ArrayCollection;
+			[Bindable]
+			static private var failedList:ArrayCollection;
+			[Bindable]
 			static private var correctAnswers:int;
 			[Bindable]
 			static private var failedAnswers:int;
@@ -25,17 +31,25 @@
 				correctAnswers=0;
 				failedAnswers=0;
 				nullAnswers=0;
+				
+				failedList = new ArrayCollection();
+				correctList = new ArrayCollection();
+				nullList = new ArrayCollection();
 			
 				for each (var q:Question in resultList){
 					if(q.userAnswer == null){
 						nullAnswers++;
+						nullList.addItem(q);
 					}else{
 						if(q.userAnswer=='true' && q.answer==true){
 							correctAnswers++;
+							correctList.addItem(q);
 						}else if(q.userAnswer=='false' && q.answer==false){
 							correctAnswers++;
+							correctList.addItem(q);
 						}else{
 							failedAnswers++;
+							failedList.addItem(q);
 						}
 					}
 				}
@@ -46,9 +60,16 @@
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>
-	<s:VGroup horizontalAlign="center" width="100%">
-		<mx:DataGrid dataProvider="{resultList}" width="100%" height="200" />
-		<s:VGroup>
+	<s:VGroup horizontalAlign="center" width="100%" height="100%">
+		<s:VGroup verticalAlign="top" paddingTop="5" width="100%" height="90%">
+			<s:Label text="Respuestas Incorrectas: " />
+			<mx:DataGrid dataProvider="{failedList}" width="100%" height="100%"/>
+			<s:Label text="Respuestas Sin Contestar: " />
+			<mx:DataGrid dataProvider="{nullList}" width="100%" height="100%"/>
+			<s:Label text="Respuestas Correctas: " />
+			<mx:DataGrid dataProvider="{correctList}" width="100%" height="100%"/>
+		</s:VGroup>
+		<s:VGroup horizontalAlign="center" verticalAlign="bottom" width="100%" height="10%">
 			<s:HGroup>
 				<s:Label text="Respuestas Correctas: " />
 				<s:Label text="{correctAnswers}" />
@@ -63,4 +84,4 @@
 			</s:HGroup>
 		</s:VGroup>
 	</s:VGroup>
-</s:TitleWindow>
+</s:Window>
