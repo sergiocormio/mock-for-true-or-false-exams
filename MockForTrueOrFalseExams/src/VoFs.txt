@@ -113,3 +113,89 @@ En un diagrama Pareto las variables se ordenan cronológicamente#F#el diagrama de
 La estimación de costos está asociada con el alcance, el calendario y los recursos#V#
 Presupuestar es el proceso de agregar los costos estimados de las actividades individuales o los paquetes de trabajo para establecer un baseline#V#??
 Finalizado el cierre, se terminó el proyecto#F#porque pudo haber sido el final de una fase, no del proyecto. Sera tan especifico, o el viejo la considerara como verdadera?
+El jefe de proyecto normalmente provee dirección y fondos para el proyecto#F#Los fondos los provee el sponsor (fondos = recursos financieros)
+En la construcción de una casa el «sponsor» es el contratista#F#CONTRATISTA: es el es contratado CONTRATANTE: es el que contrata. 2 Escenarios: 1. Si somos la empresa constructora, el sponsor no nos contrata. Es más sería nuestro PL el contratado. 2. Si somos, por ejemplo, un particular que quiere contruir una casa el contratista sería un proveedor más dentro de nuestro proyecto .El Sponsor es el que provee los fondos, al contratista hay que pagarle.
+Los interesados externos incluyen al sponsor, el equipo de trabajo, y los clientes#F#El equipo de trabajo no es externo
+El calendario de un proyecto está totalmente relacionado al Alcance#F# Se relaciona tambien con diponibilidad de recursos, etc (no solo depende del alcance)
+Los proyectos habitualmente incluyen costos indirectos no asociados a ellos como por ejemplo materiales, viaje y compras de suministros, costos del personal y consultores#F#Los indirectos son los que no pueden atribuirse a un único proyecto (ej gastos de la organización)Los indirectos no se los puede asociar al proyecto, sino a la organizacion. “los costos indirectos, aquéllos que no pueden asignarse a un proyecto específico y que se distribuirán entre varios proyectos” ? PPT
+Finalizado el cierre, se terminó el proyecto#F#Puede concluir la fase
+Lider de proyecto maneja el esfuerzo y lider funcional el presupuesto en la organizacion matricial#FALSO#el funcional no maneja el presupuesto en la matricial
+A mayor volumen (nivel de actividad) los Costos directos e indirectos son mayores.#F#los indirectos no dependen del nivel de actividad, ya que no se los puede atribuir a ningun proyecto en particular. NO necesariamente son variables los costos directos e indirectos.
+Existen  riesgos positivos y negativos.#V#
+Charter contrato legal entre sponsor y equipo.#F#No es un contrato legal
+En una organización matricial, el Jefe funcional y el Jefe de proyecto comparten la responsabilidad de asignar personas a proyectos y orientar el trabajo de las personas asignadas.#F# La asignación de personas es sólo del Jefe funcional.
+Organización matricial y organización por proyectos, es una forma distinta de llamar a una organización con la misma estructura.#F#
+El nombre y número de fases del ciclo de vida de un proyecto está determinado por la organización involucrada en el proyecto.#V#“La organización determina el ciclo de vida en función a los controles que quiera tener sobre el proyecto. Hay ciclos de vida estándar que se utilizan habitualmente en las industrias”-Martinez “Ella (la organización) determina en función del control que quiera tener, lo diferente que sean cada fase y la importancia de los entregables que se generan, el ciclo de vida que quiere aplicar. Para casos estándar, este ciclo de vida puede ser repetitivo en una industria. Pero no todos los casos son exactamente iguales.”
+Control de calidad es el monitorero de resultados específicos para determinar si cumplen estándares de calidad e identificar medios para eliminar causas que generan respuestas no satisfactorias. Las herramientas son: auditorías y mejoras de procesos.#F#: Las herramientas para el Control de Calidad NO son las auditorías, sino la prevención, inspección, diagramas en general y muestreo estadístico. Las auditorías son la principal del Aseguramiento de la calidad junto con el Análisis de Procesos.
+El Alcance se enfoca exclusivamente en el trabajo a ejecutar#F#Incluye TODO lo que se va a hacer y lo que NO tambien.
+La WBS se desarolla enumerando primero los componentes principales y luego los de menor nivel.#V#
+Organizando el segundo nivel de la WBS según componentes mayores de diseño facilita la elaboración progresiva.#V#Para ir de lo general al detalle
+Los procesos de administración de proyecto varían según formas de llevar adelante las fases del proyecto, según sean iterativas, secuenciales o sobrepuestas.#F#Los procesos de Administración no varían.
+La operación es continua y el proyecto temporal.#V#
+En una organización matricial, el Jefe funcional supervisa y controla la metodología aplicada por personas a su cargo colocadas en proyectos y la asignación y el tipo de trabajo que ejecutan.#V#“En una organización funcional, el jefe funcional sigue siendo responsable del proceso que su personal aplica, del tipo de trabajo que se le asigne, etc.” - Martinez
+Integración es la fase final del proyecto en el que se consolida módulos y se prueban en conjunto.#F#es un area de conocimiento
+Modelos de ciclo de vida diferente se utilizan para tipos de proyectos diferentes.#F#Seguro existe un contraejemplo en donde para un mismo tipo de proyecto se usan modelos distintos.
+Alcance de proyecto y alcance de producto son distintos tipos de alcance#V#
+WBS se utiliza para estimar los recursos necesarios en el proyecto.#V#La lista de Actividades es una entrada del proceso de Estimación de Recursos. Se puede inferir que dicha lista sale de la WBS.
+Las lecciones aprendidas es una herremienta que se utiliza al final del proyecto.#F#Utilizado durante todo el proyecto, pero más q nada porque no es una herramienta sino una entrada o salida.
+En un proyecto muy grande en el que participan muchas areas de la empresa, lo mejor es una organizacion funcional.#F#Creo que lo mejor es una por proyecto porq si usás una funcional vas a tener que comunicarte con todas las áreas involucradas en el proyecto y sería más complicado de manejar
+Cualquier avance del proyecto debe notificarse de forma diaria a todos los interesados.#F#No necesariamente. No hay que ser exagerado.
+La performance de un proyecto puede ser verificada por el Earned Value.#V#Por definición de EV su objetivo es medir la performance de un proyecto (Integra Alcance, Tiempo y Costo).
+Control de Calidad se hace continuamente sobre los entregables para verificar la calidad.#V#
+El Plan de Proyecto es el entregable que habilita al jefe de proyecto a asignar recursos para el mismo.#F#Esto lo hace el charter y no el plan del proyecto
+El alcance define taxativamente la autoridad del lider de proyecto.#F#La autoridad del lider de proyecto no esta dada por el alcance.
+El comprador corre menos riesgos en un contrato de reembolso que en un contrato de precio fijo.#F#es al reves
+Una estimación es un valor único.#F# Según PPTs: - es un rango y no un valor único - una afirmación probabilística, siendo el valor estimado la media de ese rango
+El ciclo de vida de un proy puede describirse de la siguiente manera: Palnificacion, Control, Definición, Desarrollo de WBS.#F#Mezcla procesos de Administración con Ciclo de Vida
+La WBS provee bases para el cronograma para luego controla via EV su performance y predecir comportamiento.#V#
+Cuando se utiliza la tec. Earned Value,  AC es igual al costo total incurrido y registrado para realizar el trabajo en un periodo de tiempo analizado.#V#es la definicion
+Al momento de la reunion de avance BAC=500, ETC=200, PV=500, ac=200, ev= 300 y cpi=1,5  -> la performance de costos es peor de lo esperada.#F#CPI > 1 buena performance
+Aseguramiento de la calidad monitorea los entregables del proyecto para verificar que cumple con los estandares.#F#Monitorea el proceso.
+La planificación de la calidad es la aplicación de actividades de calidad que aseguran que el proyecto está empleando los procesos correctos para lograr sus objetivos.#F#La planificación no se refiere a la aplicación de actividades sino a decidir cuales se van a utilizar en la ejecución.
+El calculo de $ por modulo es ejemplo de estimación paramétrica.#V#La estimación paramétrica es justamente una fórmula.
+El cálculo del potencial atraso del proyecto y la consiguiente reducción de la duración de cada actividad en un % de modo de permitir cumplir con el cronograma establecido se denomina relación costos/compresión.#F#No se basa en el potencial atraso del proyecto sino en el costo, la segunda parte está bien. Sería entonces: Costo/Compresion se basa en costo en $ y la reducción del cronograma en tiempo.
+El aseguramiento de la calidad es un proceso del grupo de proceso de Ejecución#V#       	
+El control de calidad es la vigilancia constante de resultados específicos para determinar si se está cumpliendo con los estándares de calidad solicitados.#V#
+El costo del riesgo está distribuido en forma equitativa cuando se utiliza un contrato de precio fijo#F# tiene mas riesgo ahi el que hace el trabajo.
+El desarrollo del calendario implica estimar tipo y calidad de los recursos requeridos para ejecutar cada actividad del mismo.#F#Dice calendario en vez de Cronograma.
+Contrato de costos de reembolsable es el mas apropiado cuando los costos no son del todo conocidos y el comprador absorbe el costo del riesgo.#V#
+El nivelamiento de recursos consiste en reacomodar los recursos de modo tal que sea constante el nro de recursos utilizados durante cada período.#F#No necesariamente tiene que ser constante, uno nivela para que el trabajo se cumpla. Ejemplo: “Al final no se necesitan los juniors”
+El proceso de descomponer entregables en componentes más pequeños y manejables termina cuando cada componente puede estimarse su duración y costo en ese nivel de detalle.#V#Está hablando de Paquete de Trabajo
+El reporte de performance es el proceso de recolectar y distribuir la información de cumplimiento, típicamente incluye info de avance, proyección y estado a la fecha.#V#
+El EMV es una herramienta de análisis cualitativo de riesgos#F#es cuaNTitativo. EMV = Valor monetario esperado
+Una característica esencial de un proyecto es que siempre es administrado por un Jefe de Proyecto#F#Si no dice ROL, es F
+Sobre la triple restricción y que si moves una se mueve por lo menos una de las otra#V#
+Crashing acelera el comportamiento de las tareas del camino critico.#F#lo intenta hacer pero no lo asegura (quizas podrias terminar tardando mas)
+En la Tecnica de Analisis de Riesgos el Jefe Proyecto desarrolla estrategias que eliminan los riesgos#F#No necesariamente, hay riesgos que pueden no eliminarse nunca.
+En la ejecución hay mayor esfuerzo y mayor influencia de los interesados#F#Mayor influencia de los interesados es en todo el proyecto.
+Alcance es todo el trabajo necesario para definir la funcionalidad del producto.#F#El alcance es todo el trabajo necesario para cumplir con los entregables.
+Análisis cuantitativo de riesgos utiliza la técnica de EV para "pesar" los riesgos.#F#Se usa en el Cualitativo.
+El jefe de proyecto y el sponsor son también interesados.#V#
+El PERT es una herramienta de estimación que incorpora el riesgo como un elemento de la estimación.#V#Usa el pesimista y el optimista = incorpora el riesgo.
+El último nivel de la wbs se denomina Hito.#F#Se denomina Paquete de Trabajo
+En nuestra empresa, consideramos un proyecto mantener la red funcionando todos los días.#F#Eso es trabajo operativo.
+En un proyecto con una gran cantidad de cambios, el sponsor es el responsable principal de decidir si esos cambios se autorizan o no.#V# (incluso dijo que el sponsor esta por arriba de la comisión de cambios)
+Es posible que la variación de costos CV y la variación del cronograma SV, vayan en direcciones opuestas, cv sea positivo y sv sea negativo.#V#
+Evitar un riesgo significa eliminar la amenaza específica, normalmente eliminando la causa.#V#Dice Evitar.
+Fast tracking consiste en lograr el máximo nivel de compresión al mínimo costo.#F#No asegura el máximo nivel de compresión ni de costos.
+La diferencia fundamental de PERT y CPM es que PERT calcular un valor único y determinístico para cada fecha de comienzo y fin.#F#PERT Calcula un valor Probabilístico, CPM tampoco tiene un valor determinístico.
+La OBS describe cuando y como los recursos serán ocupados por el proyecto.#F#podria estar incluido en el plan de RRHH, pero no en la OBS
+La organizacion ejecutora libera el charter (acta de constitución) del proyecto#F#Puede ni siquiera existir la organización Ejecutora cuando se libera el Charter. Lo libera el Sponsor.
+RAM es la matriz utilizada para especificar la relación entre las actividades, los roles y las personas asignadas a los roles.#V#
+La WBS muestra los componentes del trabajo asignados a las distintas unidades organizativas.#F#No muestra la relación con las personas, esa es la RAM.
+Las actividades del CC deben ejecutarse antes que las actividades de los otros posibles caminos de la red.#F#No existe eso.
+Las actividades se descomponen en Paquetes de trabajo como parte del proceso de planificación de alcance.#F#Los paquetes de trabajo se descomponen en actividades en el proceso de Definir las Actividades.
+Los entregables son las entradas al proceso de control de calidad.#V#
+Luego de estimar el esfuerzo, se puede estimar la duración de una actividad para un recurso dado.#V#
+El proceso para cerrar una fase es el mismo que para cerrar un proyecto.#V#
+Un CPI de 1,12 y un SPI de 1,38 implica que el proyecto está adelantado en calendario, pero se gasta más de lo planificado.#F#Se está gastando menos.
+Período de tiempo en semanas laborales que incluye días no laborales se denomina esfuerzo.#F#El esfuerzo no incluye no incluye días no laborales.
+Una característica esencial de un proyecto es que ocupa varias personas.#F#
+Cada elemento de la WBS va a aparecer en la red de actividades.#F#Los elementos de la WBS no son actividades.
+Si se desea tener orden cronológico en la WBS, se puede organizar teniendo fases como segundo nivel.#V#Si vos le querés dar un orden cronológico a la WBS se lo podés dar utilizando las fases del ciclo de vida.
+Recursos incluye personas, equipos, maquinas, herramientas, instalaciones y espacio.#V#
+Las dependencias discrecionales pueden limitar el número de opciones de calendarización.#V#Todas las dependencias limitan
+Un hito tiene duración equivalente a la tarea que representa.#F#Un hito no tiene duración
+Contratar un seguro es una forma de mitigación de riegos#F#es transferir
+Adquisiciones tienen un ciclo de vida propio y cada adquisición tiene uno propio.#V#asi es.
+Para utilizar Fast tracking debemos antes hacer análisis de dependencias.#V#ya que se trata de solapar las que son secuenciales
