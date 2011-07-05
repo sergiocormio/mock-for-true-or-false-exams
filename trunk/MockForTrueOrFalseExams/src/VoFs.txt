@@ -1,6 +1,6 @@
 Un proyecto es ejecutado a traves de una serie de tareas independientes#F#puede tener tareas dependientes
 El Jefe de Proyecto siempre tiene autoridad sobre las decisiones del proyecto, el presupuesto y los recursos#F#Hay decisiones que las toma el sponsor, ejemplo: acortar el alcance
-La organizacion del proyecto es independiente de la estructura de la organizacin ejecutora del proyecto#F#todas las areas se realcionan con todas (no hay nada independiente)
+La organizacion del proyecto es independiente de la estructura de la organizacin ejecutora del proyecto#F#todas las areas se relacionan con todas (no hay nada independiente)
 Los interesados de un proyecto son aquellos que tienen interes en que este concluya con exito#F#el interes sobre el proyecto puede ser positivo o negativo.
 Un usuario final que no fue involucrado en el proyecto no es un interesado#F#es un interesado y fue un grave error no haberlo involucrado. Esto genera retraso en el proyecto, y eventualmente no cumplimiento del objetivo
 Las expectativas de los interesados solo interesan al principio del proyecto#F#interesan en todo el proyecto
@@ -59,7 +59,7 @@ Aunque la entrega de nuevo hardware no forme parte de su proyecto, debe agregars
 Comenzada para finalizar es la relacion mas comun entre actividades#F#la mas comun es terminada para empezar
 La duracion solo incluye el total real de tiempo trabajado en la actividad#F#Se incluyen tiempos muertos tmb.
 El total de tiempo que una actividad puede demorarse sin demorar el proyecto se llama camino critico#F#esa es la definicion de holgura o slack. El camino critico no posee tiempos muertos. Cualquier demora, demorara el proyecto.
-La nivelacion de recursos es una tecnica de creacion de cronogramas que busca asignar trabajo equivalente a cada miembro del grupo de trabajo#V#segun su definicion: cualquier forma de analisis de cronograma en la cual la decision de ubicacion de una actividad en el mismo, fechas de comienzo y final, estan subordinadas a la restriccion de recursos (disponibilidad o dificultad para conseguir un cambio en la cantidad de recursos asignados) La palabra clave es esquivalente. no se asigna trabajo equivalente, ya que un junior no hace el trabajo equivalente al de un senior.
+La nivelacion de recursos es una tecnica de creacion de cronogramas que busca asignar trabajo equivalente a cada miembro del grupo de trabajo#F#La palabra clave es esquivalente. no se asigna trabajo equivalente, ya que un junior no hace el trabajo equivalente al de un senior.
 En una estructura matricial, el jefe funcional controla los presupuestos del proyecto#F#lo deberia hacer el jefe de proyecto
 La informacion del cronograma del proyecto puede incluir un presupuesto detallado#F#puede incluirlo, pero no creo que sea detallado
 La mayor parte del tiempo en un proyecto se gasta en la planificacion y esta insume el mayor gasto del proyecto#F#la ejecucion puede llegar a insumir mas tiempo. Tampoco creo que insuma el mayor gasto, la ejecucion creo que insume mas gasto
@@ -73,7 +73,7 @@ La estimacion por analogia es mas detallada, consume mas tiempo y es la forma ma
 El proceso de desarrollar una aproximacion de los costos de los recursos necesarios en un proyecto se denomina presupuestacion de capital#F#definicion no dada. A parte se llama estimacion de costos.
 Los proyectos habitualmente incluyen costos indirectos no asociados a ellos como por ejemplo materiales, viaje y compras de suministros, costos del personal y consultores#F#los ejemplos estan mal, son ejemplos de costos directos 
 El termino fondos para seguros describe los fondos necesarios por sobre lo estimado para reducir excesos por riesgos#F#no se dio el concepto de fondos de seguros
-La planificacion de la calidad implica la identificacion de los riesgos, el analisis ylla preparacion de su respuesta#F#Los riesgos no se identifican aca, sino que son una de las entradas de este proceso. Ademas este proceso hacer hacer otras cosas, ejemplo: analisis (e incorporacion) de atributos de calidad requeridos para el producto, etc
+La planificacion de la calidad implica la identificacion de los riesgos, el analisis y la preparacion de su respuesta#F#Los riesgos no se identifican aca, sino que son una de las entradas de este proceso. Ademas este proceso hacer hacer otras cosas, ejemplo: analisis (e incorporacion) de atributos de calidad requeridos para el producto, etc
 La comunicacion con los interesados es necesaria para trasladarles el riesgo y la responsabilidad del equipo de proyecto a ellos#F#no se le traslada ninguna responsabilidad
 La planificacion de la comunicacion determina las necesidades de comunicacion de los interesados del proyecto#F#Esta incompleta: faltaria tmb--> y como informar
 Mitigacion de riesgos implica eliminar una amenaza especifica, eliminando sus causas#F# mitigar es bajar la probabilidad de ocurrencia y el impacto de la amenaza.
@@ -167,9 +167,9 @@ Una caracteristica esencial de un proyecto es que siempre es administrado por un
 Sobre la triple restriccion y que si moves una se mueve por lo menos una de las otra#V#
 Crashing acelera el comportamiento de las tareas del camino critico.#F#lo intenta hacer pero no lo asegura (quizas podrias terminar tardando mas)
 En la Tecnica de Analisis de Riesgos el Jefe Proyecto desarrolla estrategias que eliminan los riesgos#F#No necesariamente, hay riesgos que pueden no eliminarse nunca.
-En la ejecucion hay mayor esfuerzo y mayor influencia de los interesados#F#Mayor influencia de los interesados es en todo el proyecto.
+En la ejecucion hay mayor esfuerzo y mayor influencia de los interesados#F#Mayor influencia de los interesados es al comienzo del proyecto (segun PPTs).
 Alcance es todo el trabajo necesario para definir la funcionalidad del producto.#F#El alcance es todo el trabajo necesario para cumplir con los entregables.
-analisis cuantitativo de riesgos utiliza la tecnica de EV para "pesar" los riesgos.#F#Se usa en el Cualitativo.
+Analisis cuantitativo de riesgos utiliza la tecnica de EV para "pesar" los riesgos.#F#El EV no se usa para "pesar" riesgos, esto es para obtener la probabilidad y el impacto
 El jefe de proyecto y el sponsor son tambien interesados.#V#
 El PERT es una herramienta de estimacion que incorpora el riesgo como un elemento de la estimacion.#V#Usa el pesimista y el optimista = incorpora el riesgo.
 El ultimo nivel de la wbs se denomina Hito.#F#Se denomina Paquete de Trabajo
@@ -218,7 +218,7 @@ Las actividades de administración del proyecto no están en una WBS ya que esta
 Los procesos de inicio ocurren durante cada fase de un proyecto#V#
 Las 9 áreas de conocimiento agrupan los conocimientos requeridos para administrar un proyecto#V#
 Existen 9 áreas de conocimiento y 5 grupos de procesos.#V#
-Seguimiento y control posee procesos en todas las áreas de conocimiento.#V#
+Seguimiento y control posee procesos en todas las áreas de conocimiento.#F#En todas menos en RRHH
 Un rol se define indicando su responsabilidad y la competencia requerida.#F#Indicando su Autoridad, competencia y responsabilidad.
 El charter describe todos los entregables requeridos del proyecto.#F#
 El valor planificado PV es el presupuesto.#V#
@@ -239,3 +239,4 @@ Un proyecto es un sistema cerrado que se desarrolla independientemente del conte
 La intersección entre los grupos de procesos nunca puede ser hacia atrás.#F#Las flechas sí van para atrás desde Seguimiento y Control para las de atrás por ejemplo.
 Las fases de un proyecto son equivalentes a los grupos de procesos de administración de dicho proceso.#F#
 La RACI se utiliza en la administración de requerimientos.#F#RACI es de RRHH y en la “Administración de requerimientos” se utiliza la Matriz de Rastreabilidad y es del área Alcance.
+El paquete de trabajo incluye calendario y los hitos requeridos para completarlo#V#Triste y confuso pero es verdadero, segun PPTs de Planificacion del Alcance.
