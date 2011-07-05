@@ -58,7 +58,7 @@
 				var fileStream:FileStream = new FileStream();
 				fileStream.open(file, FileMode.READ);
 				var bytesNumber:uint = fileStream.bytesAvailable;
-				var allQuestions:String;
+				var allQuestions:String = "";
 				while (bytesNumber>0){
 					allQuestions += fileStream.readUTFBytes(bytesNumber);
 					bytesNumber = fileStream.bytesAvailable;
@@ -69,7 +69,7 @@
 					if(components.length >=2){
 						var question:Question = new Question(components[0]);
 						var ans:String = components[1];
-						if(ans.toLowerCase()=='f'){
+						if(ans.substr(0,1).toLowerCase()=='f'){
 							question.answer = false;
 						}else{
 							question.answer = true;
