@@ -35,6 +35,7 @@
 				//duplicates questions list
 				var dupQuestions:ArrayCollection= new ArrayCollection();
 				dupQuestions.addAll(questions);
+				cleanAllQuestions(dupQuestions);
 				//reset current Exam
 				currentExam = new ArrayCollection();
 				while (currentExam.length<howMuchQuestions.value){
@@ -42,6 +43,12 @@
 					var newRandom:int = randomInRange(0,dupQuestions.length-1);
 					//Add it to current exam
 					currentExam.addItem(dupQuestions.removeItemAt(newRandom));
+				}
+			}
+			
+			private function cleanAllQuestions(list:ArrayCollection):void{
+				for each (var q:Question in list){
+					q.userAnswer = null;
 				}
 			}
 			
