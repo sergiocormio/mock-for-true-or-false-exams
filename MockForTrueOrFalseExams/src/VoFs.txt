@@ -240,3 +240,15 @@ La intersección entre los grupos de procesos nunca puede ser hacia atrás.#F#La
 Las fases de un proyecto son equivalentes a los grupos de procesos de administración de dicho proceso.#F#
 La RACI se utiliza en la administración de requerimientos.#F#RACI es de RRHH y en la “Administración de requerimientos” se utiliza la Matriz de Rastreabilidad y es del área Alcance.
 El paquete de trabajo incluye calendario y los hitos requeridos para completarlo#V#Triste y confuso pero es verdadero, segun PPTs de Planificacion del Alcance.
+Cashflow es lo que ingresa VS lo que se gastó.#V#
+El PV es el presupuesto expresado en $#V#Verificar  
+El EV Compara la estimación de costos en $$$ con que se gastó y con lo que se planificó y lo que realmente se completó.#V#Verificar(En la PPT dice Montos) Podria ser falsa por lo de “$$$”, en la definicion no habla sobre niguna unidad... pueden ser PESOS u HS HOMBRE por ejemplo
+Aversión y Búsqueda son 2 comportamientos de las organizaciones frente a los riesgos.#V#
+En el EV el avance de las tareas se mide por el % de avance#V#
+La única forma de validar las restricciones de calidad es validar sus riesgos.#F#Es cualquiera esa oracion
+Planificación determina el tipo de contratación por el proyecto.#V#En la planificacion de adquisiciones se determina si se compra o se fabrica
+Plan es la sumatoria de estimación de costos para la generación de un baseline.#F#Esa es la definicion de Presupuesto.
+El Costo variable varía a través del volumen de actividad.#V#
+Calidad ocurre en Ejecución.#F#En primer lugar la calidad se planifica
+El proyecto tiene un único proceso de cierre.#F#Tiene tantos como fases tenga.
+El capital de trabajo es el total recibido por los resultados del proyecto.#F#Lo recibido se llama financiamiento.
