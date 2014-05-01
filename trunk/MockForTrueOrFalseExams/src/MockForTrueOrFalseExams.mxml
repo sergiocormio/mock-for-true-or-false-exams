@@ -24,6 +24,15 @@
 			private function initApp():void{
 				loadQuestions();
 				updateNumbers();
+				centerWindowOnScreen(this);
+			}
+			
+			/**
+			 * Centers a window in the middle of the screen
+			 */ 
+			public static function centerWindowOnScreen(window:WindowedApplication):void{
+				window.nativeWindow.x = (Screen.mainScreen.bounds.width - window.width)/2;
+				window.nativeWindow.y = (Screen.mainScreen.bounds.height - window.height)/2;
 			}
 			
 			private function randomInRange(min:Number, max:Number):int {
@@ -89,12 +98,15 @@
 				}
 				fileStream.close();
 			}
-
+			
 			protected function startExam(event:MouseEvent):void{
 				//buttons...
 				nextButton.enabled=true;
 				beginButton.enabled=false;
 				endButton.enabled=true;
+				//checkboxes
+				Verdadera.enabled=true;
+				Falsa.enabled=true;
 				//time
 				clock.start();
 				//exam
@@ -103,7 +115,7 @@
 				goToNextQuestion();
 				
 			}
-
+			
 			private function goToNextQuestion():void{
 				//save First user answer
 				saveCurrentAnswer();
@@ -126,8 +138,8 @@
 			protected function nextButton_clickHandler(event:MouseEvent):void{
 				goToNextQuestion();
 			}
-
-
+			
+			
 			private function saveCurrentAnswer():void{
 				if(currentIndexQuestion!=-1){
 					if(userAnswer.selectedValue!=null){
@@ -147,11 +159,15 @@
 				beginButton.enabled = true;
 				endButton.enabled = false;
 				nextButton.enabled = false;
+				//Checkboxes
+				Falsa.enabled = false;
+				Verdadera.enabled = false;
+				
 				ResultView.resultList = currentExam;
 				var r:Window = new ResultView();
 				r.open();
 			}
-
+			
 		]]>
 	</fx:Script>
 	<fx:Declarations>
@@ -188,8 +204,8 @@
 				<s:TextArea id="currentQuestionText" width="100%" height="100%" editable="false"/>
 			</s:HGroup>
 			<s:HGroup width="90%" horizontalAlign="center" height="10%" verticalAlign="bottom">
-				<s:RadioButton groupName="userAnswer" id="Verdadera" value="true" label="Verdadera" width="150"/>
-				<s:RadioButton groupName="userAnswer" id="Falsa" value="false" label="Falsa" width="150"/>
+				<s:RadioButton groupName="userAnswer" id="Verdadera" value="true" label="Verdadera" enabled="false" width="150"/>
+				<s:RadioButton groupName="userAnswer" id="Falsa" value="false" label="Falsa" enabled="false" width="150"/>
 				<s:Button id="nextButton" label="Siguiente" click="nextButton_clickHandler(event)" enabled="false"/>
 			</s:HGroup>
 		</s:VGroup>

@@ -53,8 +53,20 @@
 						}
 					}
 				}
+				
+				stage.nativeWindow.maximize();
 			}
 			
+			private function getAnswerLabel(item:Object, col:DataGridColumn):String {
+				var answer:String = item[col.dataField];
+				if(answer=='true'){
+					return "Verdadera";
+				}else if(answer=='false'){
+					return "Falsa";
+				}else{
+					return "N/C";
+				}
+			}
 		]]>
 	</fx:Script>
 	<fx:Declarations>
@@ -62,12 +74,34 @@
 	</fx:Declarations>
 	<s:VGroup horizontalAlign="center" width="100%" height="100%">
 		<s:VGroup verticalAlign="top" paddingTop="5" width="100%" height="90%">
-			<s:Label text="Respuestas Incorrectas: " />
-			<mx:DataGrid dataProvider="{failedList}" width="100%" height="100%"/>
-			<s:Label text="Respuestas Sin Contestar: " />
-			<mx:DataGrid dataProvider="{nullList}" width="100%" height="100%"/>
-			<s:Label text="Respuestas Correctas: " />
-			<mx:DataGrid dataProvider="{correctList}" width="100%" height="100%"/>
+			<s:Label text="Respuestas Incorrectas: " fontWeight="bold"/>
+			<mx:DataGrid dataProvider="{failedList}" width="100%" height="100%">
+				<mx:columns>
+					<mx:DataGridColumn dataField="questionText" headerText="Pregunta" />
+					<mx:DataGridColumn dataField="userAnswer" headerText="Tu Respuesta" width="90" labelFunction="getAnswerLabel"/>
+					<mx:DataGridColumn dataField="answer" headerText="Respuesta Correcta" width="120" labelFunction="getAnswerLabel"/>
+					<mx:DataGridColumn dataField="clarification" headerText="Aclaración" />
+				</mx:columns>
+			</mx:DataGrid>
+				
+			<s:Label text="Respuestas Sin Contestar: " fontWeight="bold"/>
+			<mx:DataGrid dataProvider="{nullList}" width="100%" height="100%">
+				<mx:columns>
+					<mx:DataGridColumn dataField="questionText" headerText="Pregunta" />
+					<mx:DataGridColumn dataField="userAnswer" headerText="Tu Respuesta" width="90" labelFunction="getAnswerLabel"/>
+					<mx:DataGridColumn dataField="answer" headerText="Respuesta Correcta" width="120" labelFunction="getAnswerLabel"/>
+					<mx:DataGridColumn dataField="clarification" headerText="Aclaración" />
+				</mx:columns>
+			</mx:DataGrid>
+			<s:Label text="Respuestas Correctas: " fontWeight="bold" />
+			<mx:DataGrid dataProvider="{correctList}" width="100%" height="100%">
+				<mx:columns>
+					<mx:DataGridColumn dataField="questionText" headerText="Pregunta" />
+					<mx:DataGridColumn dataField="userAnswer" headerText="Tu Respuesta" width="90" labelFunction="getAnswerLabel"/>
+					<mx:DataGridColumn dataField="answer" headerText="Respuesta Correcta" width="120" labelFunction="getAnswerLabel"/>
+					<mx:DataGridColumn dataField="clarification" headerText="Aclaración" />
+				</mx:columns>
+			</mx:DataGrid>
 		</s:VGroup>
 		<s:VGroup horizontalAlign="center" verticalAlign="bottom" width="100%" height="10%">
 			<s:HGroup>
